@@ -1,4 +1,4 @@
-package com.learn.jdk8feature;
+package com.learn.jdk8feature.defaultMethod;
 
 /**
  * @author Administrator

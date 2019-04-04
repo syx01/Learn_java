@@ -1,5 +1,6 @@
-package com.learn.jdk8feature;
+package com.learn.jdk8feature.defaultMethod;
 
+import com.learn.jdk8feature.lambda.Person;
 import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Comparator;
