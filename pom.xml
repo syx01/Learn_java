@@ -53,6 +53,10 @@
             <artifactId>druid</artifactId>
             <version>1.0.18</version>
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
