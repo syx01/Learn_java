@@ -16,7 +16,7 @@ public class DaemonTest {
       @Override
       public void run() {
         try {
-          TimeUnit.SECONDS.sleep(10);
+          TimeUnit.SECONDS.sleep(1);
           System.out.println("1");
         } catch (InterruptedException e) {
           e.printStackTrace();
@@ -25,7 +25,6 @@ public class DaemonTest {
         }
       }
     },"DaemonTest");
-    //Daemon线程在执行完毕以后是不会执行finally块中的内容
     thread.setDaemon(true);
     thread.start();
   }

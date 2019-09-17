@@ -13,6 +13,7 @@ public class FixedThreadPoolTest {
     //获取当前服务器的同时可并发的线程数
     System.out.println(Runtime.getRuntime().availableProcessors());
     ExecutorService fixedThreadPool = Executors.newFixedThreadPool(8);
+
     for (int i = 0; i < 100000; i++) {
       final int index = i;
       fixedThreadPool.execute(new Runnable() {
