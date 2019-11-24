@@ -1,4 +1,4 @@
-package com.learn.jdk8feature.defaultMethod;
+package com.learn.jdk8feature.defaultmethod;
 
 import com.learn.jdk8feature.lambda.Person;
 import java.time.LocalDate;

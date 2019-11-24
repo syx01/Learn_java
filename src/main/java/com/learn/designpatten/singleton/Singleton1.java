@@ -2,16 +2,20 @@ package com.learn.designpatten.singleton;
 
 /**
  * 单例模式：懒汉模式
+ * @author Administrator
  */
 public class Singleton1 {
-    private Singleton1 singleton;
+
+    /**
+     * 使用volatile防止指令重排序
+     */
+    private volatile Singleton1 singleton;
 
     private Singleton1() {
         if (singleton!=null){
             throw new RuntimeException("防止反射破解");
         }
     }
-
     /**
      * 第一种方式：保证线程安全那就直接在方法上加同步锁
      *
